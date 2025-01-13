@@ -31,3 +31,20 @@ person["age"] = 26
 
 # Checking the dictionary after modifications
 print(person)
+
+# Using del to remove an item
+del person["age"]
+print(person)
+
+# Using pop() to remove an item and return the value
+val = person.pop("city")
+print(val)
+
+# Using popitem to removes and returns
+# the last key-value pair.
+key, val = person.popitem()
+print(f"Key: {key}, Value: {val}")
+
+# Clear all items from the dictionary
+person.clear()
+print(person)
